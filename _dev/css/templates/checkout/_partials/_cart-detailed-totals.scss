@@ -1,0 +1,23 @@
+.templates--checkout--_partials--cart-detailed-totals {
+  border-top: solid 2px #878787;
+  padding-top: 1rem;
+  line-height: 1.5;
+  font-size: 1.6rem;
+
+  .label{
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .subtotals {
+  }
+  .total{
+    margin-top: 1rem;
+    .label{
+      font-size: 1.4rem;
+      text-decoration: underline;
+    }
+    .value{
+      font-size: 2.3rem;
+    }
+  }
+}

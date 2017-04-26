@@ -1,0 +1,23 @@
+.templates--checkout--checkout{
+    margin-top: 3rem;
+
+  .content{
+    @extend %cf;
+    .templates--checkout--checkout-process{
+      float: left;
+      width: 100%;
+
+    }
+    .templates--checkout--checkout-process{
+      float: left;
+      width: 75%;
+    }
+    .templates--checkout--_partials--cart-summary{
+      float: left;
+      width: 25%;
+
+    }
+
+  }
+
+}

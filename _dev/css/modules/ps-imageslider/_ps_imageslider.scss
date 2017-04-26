@@ -1,0 +1,9 @@
+.modules--ps-imageslider--_ps_imageslider{
+  margin-top: 2rem;
+  @extend %shadow;
+  clear: left;
+  a, h2{
+    display: inline;
+    color: $body-bg;
+  }
+}

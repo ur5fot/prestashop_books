@@ -1,0 +1,19 @@
+.templates--checkout--_partials--cart-summary{
+  font-size: 1.5rem;
+  header{
+    h3{
+      font-size: 1.7rem;
+    }
+  }
+  .product-list{
+    margin-top: 2rem;
+    ul{
+      li{
+        margin-top: 1rem;
+      }
+    }
+  }
+  >.templates--checkout--_partials--cart-summary-totals{
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,93 @@
+//.page-product {
+  .templates--catalog--product {
+    @extend %cf;
+    > * {
+      float: left;
+      display: table;
+    }
+  }
+  .wrapper-thumbnails-flags {
+    position: relative;
+    width: 35%;
+  }
+  .product-actions {
+    width: calc(65% - 3rem);
+    margin-left: 3rem;
+
+  }
+  .add-to-cart-or-refresh {
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background: $product-add-to-cart-or-refresh;
+    @extend %border;
+    > * {
+      margin-bottom: 2rem;
+    }
+  }
+  .product-information {
+    float: left;
+    width: 100%;
+  }
+
+  .tabs {
+    margin-top: 3rem;
+    float: left;
+    width: 100%;
+    .nav {
+      margin-bottom: -2px;
+
+      ul {
+        //width: 100%;
+        @extend %cf;
+        display: block;
+        li {
+          float: left;
+          display: table;
+          padding: 1rem 2rem;
+          font-size: 1.6rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #0654ba;
+          border: 1px solid #ddd;
+          //margin-left: -1px;
+          background-color: $body-bg;
+          cursor: pointer;
+          transition: background .3s;
+          position: relative;
+          z-index: 0;
+          &:hover{
+            background: #ffffff;
+          }
+        }
+      }
+      .active {
+        background:#ffffff;
+        //@extend %shadow;
+        z-index: 3;
+        border-bottom: none;
+      }
+    }
+    .content {
+      @extend %cf;
+      background: #ffffff;
+      padding: 2rem;
+      border: 1px solid #ddd;
+      position: relative;
+      z-index: 2;
+      //@extend %shadow;
+      p{
+        margin-top: 1rem;
+      }
+      > * {
+        display: none;
+        transition: opacity .3s;
+
+      }
+      .active {
+        display: block;
+      }
+    }
+
+  }
+
+//}

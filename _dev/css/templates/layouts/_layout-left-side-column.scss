@@ -1,0 +1,17 @@
+.layout-left-side-column {
+  .content-wrapper {
+    //float: left;
+    width: calc(100% - 24rem);
+  }
+  .left-column {
+    width: 24rem;
+    padding-right: 2rem;
+    font-size: 1.4rem;
+    a{
+      font-size: 1.4rem;
+    }
+    .category-tree {
+
+    }
+  }
+}

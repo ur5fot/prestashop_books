@@ -1,0 +1,32 @@
+.templates--customer--_partials--customer-form {
+  @extend %card;
+  form {
+    @extend %cf;
+    .radio-field{
+
+    }
+    > label {
+      display: block;
+      @extend %cf;
+      line-height: 3rem;
+      margin-top: 1rem;
+      vertical-align: middle;
+
+      > * {
+        float: left;
+        display: table;
+        //margin-right: 2rem;
+        vertical-align: middle;
+      }
+      span {
+        width: 25%;
+      }
+      input {
+        width: 75%;
+        //height: 3rem;
+        //line-height: 3rem;
+      }
+    }
+
+  }
+}

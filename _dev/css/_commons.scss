@@ -1,0 +1,318 @@
+
+* {
+  box-sizing: border-box;
+  // overflow: hidden;
+}
+
+html {
+  font-size: $html-font-size;
+  @media all and (max-width: 768px) {
+    font-size: $html-font-size-mobil;
+  }
+}
+
+body {
+  font-size: $body-font-size;
+  position: relative;
+  color: $body-color;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background: $body-bg;
+  letter-spacing: normal;
+  min-height: 100vh;
+  > .wrapper {
+    padding-bottom: 4rem;
+    @extend %cf;
+    > * {
+      float: left;
+      display: table;
+    }
+    .templates--_partials--breadcrumb {
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+%cf {
+  @include cf;
+
+}
+
+%logo {
+  img {
+    max-height: 10rem;
+    //max-width: 20rem;
+  }
+}
+
+%shadow {
+  box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.1);
+
+}
+
+%border {
+  border: 1px solid $border-color;
+  border-radius: .3rem;
+}
+
+%text-bg {
+  color: #878787;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+%gradient-before{
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1.5rem;
+    //background: rgba($product-bg-color, .3);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.55) 55%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+  }
+}
+
+%card{
+  @extend %border, %shadow;
+  padding: 2rem;
+  background: #fff;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $a-color;
+  display: inline-block;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 .5rem;
+  position: relative;
+  @extend %cf;
+
+}
+
+.btn {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  text-transform: uppercase;
+}
+
+.btn-yes {
+  //height: 3rem;
+  //line-height: 3rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: $product-add-to-cart-btn-bg;
+  transition: background .3s;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  &:hover {
+    background-color: teal;
+    text-decoration: none;
+  }
+
+}
+
+.btn-no {
+  @extend %border;
+  text-align: center;
+  display: block;
+
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  color: #333;
+  cursor: pointer;
+  transition: border-color .3s;
+  &:hover {
+    text-decoration: none;
+    border-color: #000;
+  }
+}
+
+.btn-neutral{
+  @extend .btn-no;
+  background: $fff;
+}
+
+.checkout {
+  padding-bottom: 0;
+  a {
+    @extend .btn, .btn-yes;
+    color: #FFFFFF;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+input, textarea {
+  display: block;
+  //padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background: $fff;
+  //border-radius: 8px;
+  color: $body-color;
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #cecece;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+select {
+  line-height: 3rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  border: none;
+  border-bottom: 2px solid #cecece;
+  background: $body-bg;
+}
+
+button {
+
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $h-color;
+  a {
+    color: $h-color;
+  }
+}
+
+//.hide {
+//  display: none;
+//}
+
+.icon {
+  display: inline-block;
+  max-height: 3rem;
+  max-width: 3rem;
+  vertical-align: middle;
+
+}
+
+.main {
+  > * {
+    margin-bottom: 5rem;
+  }
+}
+
+.aside {
+  margin-top: 3rem;
+}
+
+.miniature{
+  width: calc(33% - 2rem);
+  max-height: 38rem;
+  margin: 1rem;
+  //height: 38rem;
+  @extend %shadow;
+  border: 1px solid $product-border-color;
+  border-radius: .3rem;
+  padding: .5rem;
+  background: $product-bg-color;
+  position: relative;
+  .img {
+    max-height: 28rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    position: relative;
+
+    a{
+      display:inline-block;
+      vertical-align: middle;
+    }
+    .img{
+      img{
+
+        max-height: 28rem;
+      }
+    }
+
+  }
+  .h3 {
+    display: block;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    a {
+
+    }
+  }
+  .description{
+    height: 5.7rem;
+    overflow: hidden;
+
+    @extend %gradient-before;
+
+  }
+}
+
+.flags {
+  position: absolute;
+  left: -1rem;
+  top: 50%;
+  z-index: 2;
+
+  li {
+    //@extend %shadow;
+    display: table;
+    margin-top: .5rem;
+    padding: .5rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-shadow: 0px 0px 1px rgba(#000, .2)
+  }
+  .discount {
+    background: $variant-links-discount-background;
+
+  }
+  .new {
+    background: $variant-links-new-background;
+
+  }
+}
+
+.hide{
+  display: none!important;
+}
+.show{
+  display: block!important;
+}
+

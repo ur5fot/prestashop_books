@@ -1,0 +1,114 @@
+.modules--ps_shoppingcart--ps_shoppingcart{
+  display: table;
+  float: right;
+  .blockcart{
+    @extend %cf;
+    &:hover{
+      .body{
+        display: block;
+      }
+    }
+    .header{
+      float: left;
+      display: table;
+      .templates--checkout--cart{
+        display: inline-block;
+        vertical-align: top;
+        font-weight: bold;
+
+        span{
+          display: inline-block;
+        }
+        .icon{
+          display: inline-block;
+          vertical-align: middle;
+          max-height: 3rem;
+          max-width: 3rem;
+          margin-right: .5rem;
+        }
+        .count{
+          margin-left: .5rem;
+          display: inline-block;
+        }
+      }
+    }
+    .body{
+      display: none;
+      position: absolute;
+      z-index: 99999;
+      top: 100%;
+      right: 0;
+      left: 0;
+      background: $fff;
+      @extend %shadow;
+      @extend %cf;
+      padding: 1rem;
+      //@extend %cf;
+      ul{
+        text-align: right;
+        display: table;
+        float: right;
+        width: 75%;
+        li{
+          //margin: 0 auto;
+          margin-top: 1rem;
+          //border:1px solid #636363;
+          //padding: 2rem;
+          line-height: 2rem;
+          vertical-align: middle;
+        }
+
+      }
+
+      .remove-from-cart{
+        display: inline-block;
+        padding: 0 1rem;
+        .icon{
+          max-height: 2rem;
+          max-width: 2rem;
+        }
+      }
+
+      .product-quantity{
+        font-size: 1.6rem;
+
+      }
+      .product-price{
+        font-size: 1.6rem;
+      }
+      .product-name{
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 1rem;
+      }
+
+      .wrapper{
+        float: left;
+        width: 25%;
+        text-align: right;
+        line-height: 1.5;
+        .cart-subtotals, .cart-total{
+          //margin: 1rem auto;
+          display: table;
+          width: 100%;
+        }
+        .cart-total{
+          .label{
+            font-weight: bold;
+            font-size: 1.4rem;
+            display: inline-block;
+            text-decoration: underline;
+            margin-right: .5rem;
+
+          }
+          .value{
+            font-size: 1.8rem;;
+          }
+
+        }
+      }
+
+    }
+  }
+}
+

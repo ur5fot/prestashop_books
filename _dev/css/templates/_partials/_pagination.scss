@@ -1,0 +1,43 @@
+.templates--_partials--pagination{
+  width: 100%;
+  line-height: 3rem;
+  .wrapper{
+    display: table;
+    margin: 0 auto;
+    @extend %cf;
+  }
+  
+  .quantity{
+    float: left;
+    
+  }
+  
+  .page-list{
+    margin-left: 1rem;
+    float: left;
+    @extend %cf;
+    @extend %border;
+    padding: 0 1rem;
+    a{
+
+      @extend  %text-bg;
+    }
+    li{
+      float: left;
+      margin: 0 .5rem;
+      &:first-of-type{
+        margin-right: 3rem;
+      }
+      &:last-of-type{
+        margin-left: 3rem;
+      }
+    }
+    .current{
+      a{
+
+        color: $a-color;
+      }
+    }
+  }
+
+}

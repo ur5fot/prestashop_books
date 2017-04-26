@@ -1,0 +1,18 @@
+.modules--blockreassurance {
+  ul{
+    li{
+      padding-left: 4rem;
+      position: relative;
+      margin-top: 1.5rem;
+      .icon{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -12px;
+      }
+      span{
+        line-height: 1.4;
+      }
+    }
+  }
+}

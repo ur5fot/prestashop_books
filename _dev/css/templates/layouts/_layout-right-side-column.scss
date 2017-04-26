@@ -1,0 +1,15 @@
+.layout-right-side-column{
+  .content-wrapper {
+    //float: left;
+    width: calc(100% - 24rem);
+  }
+  .right-column {
+    width: 24rem;
+    padding-left: 2rem;
+    font-size: 1.4rem;
+    a{
+      font-size: 1.4rem;
+    }
+
+  }
+}

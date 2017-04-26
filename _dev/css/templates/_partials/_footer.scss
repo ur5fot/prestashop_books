@@ -1,0 +1,20 @@
+.templates--_partials--footer{
+  background: $footer-bg;
+  @extend %shadow;
+  @extend %cf;
+  padding: 2rem 0 ;
+  .block-contact{
+    float: left;
+    display: table;
+    h4{
+      color: #878787;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+  }
+  .copyright-link{
+    float: right;
+    display: table;
+    vertical-align: bottom;
+  }
+}

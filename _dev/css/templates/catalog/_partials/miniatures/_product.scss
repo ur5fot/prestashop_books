@@ -1,0 +1,91 @@
+.templates--catalog--_partials--miniatures--product {
+  @extend .miniature;
+  width: calc(25% - 2rem);
+
+  .img {
+    img{
+      max-height: 22rem;
+    }
+  }
+
+  .h3 {
+    font-size:1.4rem;
+
+  }
+  /*.description-short {
+    height: 4.3rem;
+
+    overflow: hidden;
+    position: relative;
+    @extend %gradient-before;
+   !* &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1.5rem;
+      //background: rgba($product-bg-color, .3);
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.55) 55%,rgba(255,255,255,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+    }*!
+  }*/
+  .variant-links {
+    position: absolute;
+
+    left: 1rem;
+    top: 1rem;
+    a {
+      display: block;
+      height: 2rem;
+      width: 2rem;
+      margin-top: .5rem;
+      border: solid 1px $product-border-color;
+    }
+  }
+  .price-and-shipping {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    text-shadow: 0px 0px 2px $templates--catalog--_partials--miniatures--product_price-and-shipping_sh-t-color;
+
+    span {
+      text-align: center;
+      margin-top: 1rem;
+      display: inline-block;
+      //font-weight: bold;
+    }
+    .price {
+      font-weight: bold;
+      display: block;
+    }
+    .discount-percentage {
+      font-weight: bold;
+    }
+    .regular-price {
+      font-size: 1.2rem;
+      text-decoration: line-through;
+    }
+  }
+  .list-actions{
+    text-align: center;
+    margin-top: 1rem;
+    .btn-yes{
+      display: inline-block;
+    }
+  }
+
+  .product-availability {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.2rem;
+    display: block;
+    text-align: right;
+    margin-top: 1rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 11rem;
+  }
+}

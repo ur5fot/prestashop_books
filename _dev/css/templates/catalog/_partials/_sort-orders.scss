@@ -1,0 +1,52 @@
+.templates--catalog--_partials--sort-orders {
+  width: 25rem;
+  line-height: 3rem;
+  @extend %border;
+  position: relative;
+  padding: 0 2rem 0 1rem;
+  font-size: 1.5rem;
+  &:after{
+    content: ' ';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+
+    margin-top: -.4rem;
+    border: solid .7rem transparent;
+    border-top-color: #878787;
+    height: 0;
+    width: 0;
+
+  }
+
+
+  .active{
+    color: $templates--catalog--_partials--sort-orders_color;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+  }
+
+  &:hover{
+    .wrapper{
+      display: block;
+    }
+  }
+  .wrapper{
+    display: none;
+    font-weight: normal;
+    padding: 0 1rem;
+    position: absolute;
+    top: calc(100% + 1px);
+    right: 0;
+    left: 0;
+    z-index: 3;
+    background: $templates--catalog--_partials--sort-orders_bg;
+
+
+  }
+  a {
+    display: block;
+
+  }
+}

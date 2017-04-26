@@ -1,0 +1,56 @@
+.templates--catalog--_partials--facets {
+
+  .facet-price-form{
+    @extend %cf;
+    .min, .max{
+      //width: 7rem;
+      height: 3rem;
+      @extend %border;
+      display: block;
+      float: left;
+      padding: 1.8rem 0 1.8rem 2rem ;
+      //margin-left: 1rem;
+      font-size: 1.5rem;
+    }
+    .btn-neutral{
+      display: block;
+    }
+    .min, .max, .btn-neutral{
+      width: 33%;
+    }
+    .center{
+      text-align: center;
+    }
+
+  }
+  .facet-slider{
+    margin-top: 1rem;
+  }
+
+  h3{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  a{
+    font-size: 1.5rem;
+
+  }
+  .price{
+    display: none;
+  }
+
+  .facet{
+    margin-top: 2rem;
+    ul{
+      margin-top: .5rem;
+      li{
+        input{
+          display: inline-block;
+          height: auto;
+          line-height: 1.2rem;
+          border: none;
+        }
+      }
+    }
+  }
+}

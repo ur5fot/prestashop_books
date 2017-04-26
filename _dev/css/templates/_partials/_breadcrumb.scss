@@ -1,0 +1,28 @@
+.templates--_partials--breadcrumb {
+  //margin-top: 2rem;
+  //margin-bottom: 2rem;
+  width: 100%;
+  ol {
+    display: block;
+    @extend %cf;
+    li {
+      float: left;
+      display: block;
+      padding: 0 2rem 0 1rem;
+      position: relative;
+      &:before {
+        content: '/';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -.75rem;
+
+      }
+      &:last-of-type {
+        &:before {
+          content: '';
+        }
+      }
+    }
+  }
+}

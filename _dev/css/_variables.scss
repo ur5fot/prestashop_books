@@ -1,0 +1,64 @@
+//color card
+$darkest: #333;
+$dark: #002D5F;
+$dark-light: #0654BA;
+$medium-light: #2FB5D2;
+$light: #c1c1c1;
+$light2: #878787;
+$lightest: #F8F8F8;
+$fff: #fff;
+
+//Color accent
+
+//html
+$html-font-size: 10px;
+$html-font-size-mobil: 8px;
+
+//body
+
+$body-color: $darkest;
+$body-bg: $lightest;
+
+$body-font-size: 1.4rem;
+
+$a-color: $dark-light;
+
+$h-color: $dark;
+$font-size-h1: 2.25rem;
+
+$border-color: $light;
+
+//header
+$header-a-color: $darkest;
+
+// цвет ссылок в меню шапки сайта
+$modules--ps_mainmenu_a_color: $light2;
+$modules--ps_mainmenu_bg: $fff;
+
+//product
+$product-bg-color: $fff;
+$product-border-color: $light;
+$variant-links-discount-background: rgba($blue, .7);
+$variant-links-new-background: rgba($orange, .7);
+
+$templates--catalog--_partials--miniatures--product_price-and-shipping_sh-t-color: $fff;
+
+$modules--ps-featuredproducts--ps_featuredproducts_color: $light2;
+$templates--catalog--_partials--products-top_color: $light2;
+//product peage
+$product-miniature-border-color-hover: $red;
+$product-add-to-cart-or-refresh: $silver;
+$product-add-to-cart-btn-bg: $teal;
+
+//footer
+$footer-bg: $fff;
+
+$templates--catalog--_partials--sort-orders_bg: $fff;
+$templates--catalog--_partials--sort-orders_color: $light2;
+
+$card-bg: $fff;
+
+$templates--catalog--_partials--active-filters_item_bg: $fff;
+
+/*cms*/
+$templates--cms--page_bg:$fff;

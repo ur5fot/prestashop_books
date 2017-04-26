@@ -1,0 +1,51 @@
+.templates--customer--_partials--block-address {
+  width: calc(33% - 2rem);
+  max-height: 38rem;
+  //height: 38rem;
+  //overflow: hidden;
+  @extend %shadow;
+  border: 1px solid $product-border-color;
+  border-radius: .3rem;
+  padding: 1.5rem;
+  background: $product-bg-color;
+  position: relative;
+  header {
+    //float: left;
+    width: 100%;
+    padding-right: 8rem;
+    h2 {
+      //font-size: 2rem;
+      font-size: 1.6rem;
+    }
+  }
+  .address {
+    margin: 1rem;
+    line-height: 1.5;
+    //float: left;
+    .content{
+      margin-top: 1rem;
+    }
+    .actions {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      ul {
+        @extend %cf;
+        li {
+          float: left;
+          display: table;
+          margin-left: .5rem;
+          a{
+            padding: 0 .5rem;
+
+          }
+        }
+      }
+      .icon{
+        max-height: 2.3rem;
+        max-width: 2.3rem;
+        display: inline-block;
+      }
+    }
+  }
+}

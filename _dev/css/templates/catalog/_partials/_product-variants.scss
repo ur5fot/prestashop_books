@@ -1,0 +1,47 @@
+.templates--catalog--_partials--product-variants{
+  .item{
+    @extend %cf;
+    margin-top: 1rem;
+    .group-title, .group{
+      float: left;
+      display: table;
+    }
+    .group-title{
+      font-weight: bold;
+      margin-right: 1rem;
+      line-height: 3rem;
+    }
+    select.group{
+      height: 3rem;
+      line-height: 3rem;
+      padding:0 1rem;
+
+    }
+    ul.group{
+      @extend %cf;
+      li.input-container{
+        float: left;
+        margin-left: 0rem;
+      }
+    }
+
+    input.input-color{
+      //display: none;
+      display: inline-block;
+      cursor: pointer;
+      vertical-align: middle;
+    }
+
+    label.input-color {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      //display: block;
+      height: 3rem;
+      width: 3rem;
+      //margin-top: .5rem;
+      border: solid 1px #ccc;
+      cursor: pointer;
+    }
+  }
+}

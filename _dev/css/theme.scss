@@ -1,0 +1,127 @@
+@import "lib/_reset.scss";
+
+@import "lib/_colors_variables.scss";
+@import "lib/_mixin.scss";
+@import "variables";
+@import "commons";
+
+@import "templates/layouts/layout-both-columns";
+@import "templates/layouts/layout-full-width";
+@import "templates/layouts/layout-left-side-column";
+@import "templates/layouts/layout-right-side-column";
+
+/*header*/
+@import "templates/_partials/header";
+
+@import "modules/ps_linklist/linkblock";
+
+@import "modules/ps_contactinfo/nav";
+@import "modules/ps_contactinfo/ps_contactinfo-rich";
+
+/**/
+@import "modules/contactform/contactform";
+
+/*displaySearch*/
+@import "modules/ps_searchbar/ps_searchbar";
+
+/*displayNav*/
+@import "modules/ps_shoppingcart/ps_shoppingcart";
+@import "modules/ps_shoppingcart/modal";
+@import "modules/ps_customersignin/_ps_customersignin";
+
+/*header-bottom*/
+@import "modules/ps_mainmenu/_ps_mainmenu";
+
+/*breadcrumb*/
+@import "templates/_partials/breadcrumb";
+
+/*main*/
+@import "modules/ps-imageslider/_ps_imageslider";
+@import "modules/ps-featuredproducts/_ps_featuredproducts";
+@import "templates/catalog/_partials/miniatures/_product";
+@import "modules/ps_banner/_ps_banner";
+
+/* layout-left-side-column */
+/*category*/
+@import "modules/ps_categorytree/_ps_categorytree";
+@import "templates/catalog/listing/_category";
+@import "templates/catalog/_partials/miniatures/_category";
+@import "templates/catalog/_partials/_products-top";
+@import "templates/catalog/_partials/_sort-orders";
+@import "templates/catalog/_partials/_products";
+@import "templates/_partials/_pagination";
+@import "templates/catalog/_partials/_active-filters";
+@import "templates/errors/_not-found";
+
+/*фильтер товаров*/
+//тут только переменые
+@import "modules/ps_facetedsearch/ps_facetedsearch";
+//а тут шаблон
+@import "templates/catalog/_partials/facets";
+//@import "templates/catalog/_partials/facets";
+
+/*product*/
+@import "templates/catalog/_product";
+@import "templates/catalog/_partials/_product-cover-thumbnails";
+@import "templates/catalog/_partials/_product-prices";
+@import "templates/catalog/_partials/_product-variants";
+@import "templates/catalog/_partials/_product-add-to-cart";
+@import "modules/ps_sharebuttons/_ps_sharebuttons";
+
+/*cart*/
+@import "templates/checkout/_cart";
+@import "templates/checkout/_partials/_cart-detailed";
+@import "templates/checkout/_partials/_cart-detailed-product-line";
+@import "templates/checkout/_partials/_cart-summary-items-subtotal";
+@import "templates/checkout/_partials/_cart-detailed-totals";
+@import "modules/blockreassurance/blockreassurance";
+
+/*checkout*/
+@import "templates/checkout/_checkout";
+@import "templates/checkout/_partials/_cart-summary";
+@import "templates/checkout/_checkout-process";
+@import "templates/checkout/_partials/_cart-summary-product-line";
+@import "templates/checkout/_partials/_cart-summary-totals";
+@import "templates/checkout/_partials/customer-form";
+@import "templates/checkout/_partials/header";
+
+//.form-fields и .form-footer находится тут надо решить и сделать компонент
+@import "templates/customer/_partials/_address-form";
+
+/*checkout step*/
+
+/*my-account*/
+@import "templates/customer/_my-account";
+@import "templates/customer/_addresses";
+@import "templates/customer/_partials/_block-address";
+
+
+
+
+@import "templates/_partials/_form-errors";
+
+
+@import "templates/customer/_partials/_customer-form";
+
+/*authentication регистрация*/
+@import "templates/customer/_authentication";
+@import "templates/customer/_partials/_login-form";
+
+/*page*/
+@import "templates/_page";
+
+@import "templates/_partials/_footer";
+
+
+/*cms*/
+@import "templates/cms/page";
+
+
+
+
+
+
+
+ 
+
+

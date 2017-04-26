@@ -1,0 +1,36 @@
+.modules--ps-featuredproducts--ps_featuredproducts {
+  //clear: left;
+  .products {
+    margin-top: 3rem;
+    @extend %cf;
+     > * {
+      float: left;
+      //display: table;
+    }
+  }
+  .all-products-link{
+    margin-top: 1rem;
+    text-align: right;
+
+    a{
+      color: #878787;
+      font-weight: bold;
+      font-size: 1.8rem;
+      &:hover{
+        &:after{
+
+          text-decoration: none;
+        }
+      }
+
+    }
+    &:after {
+      color: $modules--ps-featuredproducts--ps_featuredproducts_color;
+      content: ' >';
+      vertical-align: middle;
+      font-weight: bold;
+      font-size: 1.8rem;
+
+    }
+  }
+}

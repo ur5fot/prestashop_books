@@ -1,0 +1,33 @@
+.templates--catalog--_partials--product-add-to-cart{
+  @extend %cf;
+  line-height: 3rem;
+  > *{
+    float: left;
+    display: table;
+  }
+  .product-quantity{
+    @extend %cf;
+    float: left;
+
+    .group-title{
+      float: left;
+      font-weight: bold;
+      margin-right: 1rem;
+      line-height: 4rem;
+
+    }
+
+    .group{
+      line-height: 4rem;
+      height: 4rem;
+      float: left;
+      width: 6rem;
+      text-align: center;
+      padding-left: 1rem;
+      margin-right: .3rem;
+    }
+  }
+  .btn-yes{
+    margin-left: .3rem;
+  }
+}

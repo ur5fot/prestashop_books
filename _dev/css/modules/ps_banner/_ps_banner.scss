@@ -1,0 +1,11 @@
+.modules--ps_banner--_ps_banner{
+  margin-top: 3rem;
+  .banner{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  img{
+    @extend %shadow;
+  }
+}

@@ -1,0 +1,16 @@
+.templates--checkout--_partials--cart-summary-product-line{
+  //text-align-last: right;
+  span{
+    display: inline-block;
+    padding-left: 1rem;
+  }
+  .quantity{
+    //font-weight: bold;
+
+  }
+  .price{
+    font-style: italic;
+    text-align: right;
+  }
+
+}

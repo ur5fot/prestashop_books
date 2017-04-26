@@ -1,0 +1,58 @@
+.page-my-account {
+  .page-content{
+
+  }
+  .link-list {
+    @extend %cf;
+    margin-top: 3rem;
+    li {
+      float: left;
+
+      display: table-cell;
+      vertical-align: middle;
+      width: 33%;
+      padding: 1rem;
+      //height: 38rem;
+      //overflow: hidden;
+
+      a {
+        border-radius: .3rem;
+        @extend %shadow, %border;
+        background: $product-bg-color;
+        //padding: 1rem;
+        text-align: center;
+        height: 15rem;
+        padding-top: 3.5rem;
+        display: block;
+        vertical-align: middle;
+        overflow: hidden;
+        font-size: 1.6rem;
+        font-weight: bold;
+        &:hover {
+          text-decoration: none;
+          .icon{
+
+            margin-top: -1rem;
+            margin-bottom:2rem;
+          }
+        }
+        span {
+          line-height: 1;
+          .icon {
+            height: 4rem;
+            width: 4rem;
+            vertical-align: middle;
+            margin-bottom: 1rem;
+            display: inline-block;
+
+            margin-top: 0;
+
+            transition: margin-top .3s, margin-bottom .3s;
+
+          }
+        }
+
+      }
+    }
+  }
+}

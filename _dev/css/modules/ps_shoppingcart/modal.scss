@@ -1,0 +1,27 @@
+.modules--ps_shoppingcart--modal{
+  @extend %shadow, %border;
+  background: $fff;
+  padding: 1rem;
+  display: none;
+  z-index: 9999;
+  position: fixed;
+  @extend %cf;
+  header{
+    height: 100%;
+    margin-bottom: 1.5rem;
+    p{
+      margin-top: .5rem;
+      font-weight: bold;
+    }
+  }
+  .img{
+
+    float: left;
+    width: 10rem;
+  }
+  .description{
+    float: right;
+    width: 10rem;
+    line-height: 1.5;
+  }
+}

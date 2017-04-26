@@ -1,0 +1,74 @@
+.templates--checkout--_partials--cart-detailed-product-line {
+  background: #fff;
+  @extend %shadow;
+  @extend %cf;
+  padding: 1rem;
+  position: relative;
+  .image {
+    float: left;
+    display: table;
+    width: 25%;
+
+  }
+  .description {
+    float: left;
+    display: table;
+    width: 75%;
+
+  }
+  .name {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+  }
+  .attributes {
+    display: inline-block;
+    margin-right: 1rem;
+    .label{
+      font-weight: bold;
+    }
+  }
+  .wrapper-price{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    >*{
+      display: inline-block;
+    }
+  }
+  .remove-from-cart{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    .icon{
+      max-height: 2.5rem;
+      max-width: 2.5rem;
+    }
+  }
+
+  .product-price{
+    margin-right: 2rem;
+  }
+  .quantity{
+    //margin-left: 1rem;
+    //font-weight: bold;
+    font-size: 1.8rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+  .decrease-quantity, .increase-quantity{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 1rem;
+    &:hover{
+      text-decoration: none;
+    }
+    //vertical-align: top;
+  }
+  .increase-quantity{
+    margin-right: 2rem;
+  }
+  .price{
+    font-weight: bold;
+  }
+
+}

@@ -1,0 +1,22 @@
+.templates--catalog--_partials--products-top{
+  @extend %cf;
+  line-height: 3rem;
+  color: $templates--catalog--_partials--products-top_color;
+  //font-weight: bold;
+  .there-product{
+    float: left;
+    display: table;
+  }
+  .wrapper{
+    @extend %cf;
+    float: right;
+    display: table;
+  }
+  .templates--catalog--_partials--sort-orders{
+    margin-left: 1rem;
+  }
+  .display-quantity, .templates--catalog--_partials--sort-orders{
+    float: left;
+    display: table;
+  }
+}

@@ -1,0 +1,40 @@
+.templates--catalog--_partials--active-filters {
+  margin-top: 2rem;
+  .h3 {
+    font-size: 1.3rem;
+  }
+  @extend %cf;
+  .filters {
+    margin-top: 1rem;
+    display: table;
+    @extend %cf;
+    float: left;
+    .item {
+      float: left;
+      display: table;
+    }
+  }
+  .item{
+    line-height: 2rem;
+    text-align-last: right;
+    display: inline-block;
+    a{
+      display: inline-block;
+      background: $templates--catalog--_partials--active-filters_item_bg;
+      @extend %border;
+      padding: .5rem;
+      margin: .5rem;
+    }
+  }
+  .clear {
+    float: right;
+    display: table;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .icon{
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+    margin-right: .5rem;
+  }
+}

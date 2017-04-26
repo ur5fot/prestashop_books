@@ -1,0 +1,16 @@
+.templates--cms--page{
+  background: $templates--cms--page_bg;
+  @extend %border, %shadow;
+  padding: 2rem;
+  h2,h3{
+    margin-top: 2rem;
+
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+  p{
+    margin-top: 1rem;
+    line-height: 1.4;
+  }
+}

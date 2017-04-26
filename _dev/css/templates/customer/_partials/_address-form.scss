@@ -1,0 +1,89 @@
+.address-form-wrraper {
+  //@extend %card;
+}
+
+// templates--customer--_partials--address-form
+/*.address-form,*/ .templates--customer--_partials--address-form {
+  @extend %card;
+  .wrraper {
+
+    > * {
+      display: block;
+    }
+
+    > label, > div {
+      margin-top: 2rem;
+      @extend %cf;
+      span {
+        font-weight: 400;
+        display: table;
+        font-size: 1.6rem;
+        float: left;
+        width: 25%;
+        //text-align: right;
+        padding-right: 2rem;
+        line-height: 3rem;
+      }
+      input {
+        display: table;
+        float: left;
+        width: 75%;
+
+      }
+
+    }
+    .radio-field {
+      line-height: 2.5rem;
+      > label {
+        display: table;
+        float: left;
+        padding-right: 2rem;
+        input {
+          height: 2rem;
+          width: 2rem;
+        }
+
+      }
+    }
+    .checkbox-field {
+      input {
+        margin-left: 25%;
+        width: 2rem;
+
+      }
+      span {
+        width: calc(75% - 3rem);
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  .form-footer {
+    margin-top: 4rem;
+    text-align: center;
+    .continue {
+      display: inline-block;
+
+    }
+    a {
+      display: inline-block;
+      margin-right: 2rem;
+      text-align: center;
+      //display: block;
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      color: #878787;
+      cursor: pointer;
+      transition: border-color .3s;
+      border: 1px solid #ccc;
+      border-radius: .3rem;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: none;
+        border-color: #000000;
+      }
+    }
+  }
+
+}

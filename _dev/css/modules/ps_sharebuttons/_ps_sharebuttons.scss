@@ -1,0 +1,16 @@
+.modules--ps_sharebuttons--ps_sharebuttons {
+  margin-top: 3rem;
+  ul {
+    @extend %cf;
+    li {
+      float: left;
+      display: block;
+      margin-right: 1rem;
+    }
+  }
+  .icon{
+
+    height: 3rem;
+    width: 3rem;
+  }
+}

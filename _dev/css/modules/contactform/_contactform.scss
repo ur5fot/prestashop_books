@@ -1,0 +1,52 @@
+.modules--contactform {
+  background: $card-bg;
+  @extend %shadow, %border;
+  padding: 2rem;
+  margin-top: 4rem;
+  header{
+
+    h2{
+      font-size:1.7rem;
+    }
+  }
+  form{
+    margin-left: 3rem;
+
+    .form-fields{
+      margin-top: 2rem;
+    }
+    select{
+      background: $card-bg;
+      display: table;
+    }
+    label{
+      display: block;
+      margin-top: 2rem;
+      @extend %cf;
+      span{
+        float: left;
+        width: 25%;
+        font-size: 1.6rem;
+        line-height: 3rem;
+
+      }
+      input, textarea{
+        float: left;
+        display: table;
+        width: 75%;
+        height: 3rem;
+        line-height: 3rem;
+      }
+      textarea{
+        height: auto;
+        padding: 1rem;
+      }
+      input[type='file']{
+        border:none;
+        line-height: 2rem;
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,56 @@
+.templates--_partials--header {
+  .header-nav {
+    background: #ffffff;
+    @extend %shadow;
+    a {
+      color: $header-a-color;
+      font-weight: bold;
+      display: inline-block;
+      //font-size: 1.6rem;
+    }
+    .container {
+      line-height: 4rem;
+      vertical-align: middle;
+    }
+    .modules--ps_customersignin--_ps_customersignin {
+      display: table;
+      float: left;
+    }
+  }
+
+  .header-bottom {
+    .header-logo {
+      @extend %logo;
+      //font-size: 0;
+      //vertical-align: middle;
+
+      //display: table;
+      float: left;
+      width: 20%;
+    }
+    .nav {
+      //line-height: 10rem;
+      display: table;
+      //display: inline-block;
+      vertical-align: middle;
+      //font-size: 0;
+      float: left;
+      //height: 100%;
+      width: 50%;
+      height: 100%;
+      position: relative;
+
+    }
+    .modules--ps_searchbar{
+      float: left;
+      display: table;
+      width: 30%;
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+.templates--customer--addresses{
+  @extend %cf;
+  .templates--customer--_partials--block-address{
+    float: left;
+    margin: 1rem;
+  }
+
+  > footer{
+    float: left;
+    width: 100%;
+    margin-top: 2rem;
+    .icon{
+      max-height: 2.3rem;
+      max-width: 2.3rem;
+      vertical-align: middle;
+      display: inline-block;
+      margin-right: 1rem;
+    }
+  }
+
+}

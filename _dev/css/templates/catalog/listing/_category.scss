@@ -1,0 +1,36 @@
+.templates--catalog--listing--_category {
+  position: relative;
+  @extend %shadow;
+  display: table;
+  margin: 0 auto;
+  background: #ffffff;
+  min-height: 15rem;
+  width: 100%;
+  .category-cover {
+    font-size: 0;
+
+  }
+  h1 {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+
+  }
+  .category-description {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    line-height: 1.3;
+    font-size: 1.7rem;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.subcategories {
+  @extend %cf;
+  > * {
+    float: left;
+  }
+
+}

@@ -1,0 +1,15 @@
+.templates--customer--authentication{
+  > header{
+    span{
+      display: block;
+      margin-top: 2rem;
+    }
+  }
+  .templates--customer--_partials--login-form{
+    max-width: 50rem;
+    padding: 2rem;
+    background: #FFFFFF;
+    @extend %shadow, %border;
+    margin:4rem auto 0;
+  }
+}

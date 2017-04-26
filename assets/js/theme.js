@@ -428,6 +428,8 @@ $(function () {
         }
     };
 
+
+
     //console.log('facets', getQuery($radioButtons.find('[data-search-url]').first(), 'q'));
     //console.log('facets',$radioButtons.find('[data-search-url]').first().attr('data-search-url'));
     var currentUrl = prestashop.urls.current_url;
@@ -448,6 +450,7 @@ $(function () {
             var qS = qMax.split('.')[0];
 
             console.log(prestashop.urls.current_url);
+
             console.log(qS);
             console.log(min);
             console.log(max);
@@ -455,9 +458,11 @@ $(function () {
             $inputMin.val(min);
             $inputMax.val(max);
 
+            console.log(currentUrl + '&q=' + qS + '.' + '-' +  $inputMin.val() + '-' + $inputMax.val());
+            console.log($radioButtons.find('[data-search-url]').first().attr('data-search-url'));
             $facetPriceForm.submit(function (e) {
 
-                prestashop.emit('updateFacets', currentUrl + '?q=' + qS + '.' + '-' +  $inputMin.val() + '-' + $inputMax.val());
+                prestashop.emit('updateFacets', currentUrl + '&q=' + qS + '.' + '-' +  $inputMin.val() + '-' + $inputMax.val());
                 return false;
 
             });

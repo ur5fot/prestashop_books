@@ -969,9 +969,6 @@ h1, h2, h3 {
 .templates--catalog--_partials--facets a {
   font-size: 1.5rem; }
 
-.templates--catalog--_partials--facets .price {
-  display: none; }
-
 .templates--catalog--_partials--facets .facet {
   margin-top: 2rem; }
   .templates--catalog--_partials--facets .facet ul {

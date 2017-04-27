@@ -25,6 +25,26 @@
 *}
 
 {if $homeslider.slides}
+  <div class="homeslider-container modules--ps-imageslider--_ps_imageslider container" data-interval="{$homeslider.speed}" data-wrap="{$homeslider.wrap}" data-pause="{$homeslider.pause}">
+    <div class="owl-carousel owl-theme">
+      {foreach from=$homeslider.slides item=slide}
+        <div class="item">
+          <a href="{$slide.url}">
+            <img src="{$slide.image_url}" alt="{$slide.legend|escape}" />
+            {if $slide.title || $slide.description }
+              <span class="caption">
+                <h2>{$slide.title}</h2>
+                <div>{$slide.description nofilter}</div>
+              </span>
+            {/if}
+          </a>
+        </div>
+      {/foreach}
+    </div>
+  </div>
+{/if}
+{*
+{if $homeslider.slides}
   <div class="homeslider-container modules--ps-imageslider--_ps_imageslider" data-interval="{$homeslider.speed}" data-wrap="{$homeslider.wrap}" data-pause="{$homeslider.pause}">
     <ul class="rslides">
       {foreach from=$homeslider.slides item=slide}
@@ -43,3 +63,4 @@
     </ul>
   </div>
 {/if}
+*}

@@ -26,6 +26,33 @@
 
 jQuery(document).ready(function ($) {
   var homesliderConfig = {
+      loop:true,
+      margin:10,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:2,
+              nav:false
+          },
+          1000:{
+              items:3,
+              nav:true,
+              loop:false
+          }
+      }
+  };
+  // прописал с css внахалку карусели макс ширену 1200px тогда заработало
+  $(".owl-carousel").owlCarousel(homesliderConfig);
+
+});
+
+/*
+jQuery(document).ready(function ($) {
+  var homesliderConfig = {
     speed: 500,            // Integer: Speed of the transition, in milliseconds
     timeout: $('.homeslider').data('interval'),          // Integer: Time between slide transitions, in milliseconds
     nav: true,             // Boolean: Show navigation, true or false
@@ -40,3 +67,4 @@ jQuery(document).ready(function ($) {
   $(".rslides").responsiveSlides(homesliderConfig);
 
 });
+*/

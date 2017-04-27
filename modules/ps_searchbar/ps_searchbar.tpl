@@ -26,9 +26,10 @@
 <div id="search_widget" class="modules--ps_searchbar"  data-search-controller-url="{$search_controller_url}">
 	<form method="get" action="{$search_controller_url}">
 		<input type="hidden" name="controller" value="search">
+
+		<input type="text" name="s" value="{$search_string}">
 		<button type="submit" class=" btn-neutral">
             {l s='Search' d='Modules.Searchbar.Shop'}
 		</button>
-		<input type="text" name="s" value="{$search_string}">
 	</form>
 </div>

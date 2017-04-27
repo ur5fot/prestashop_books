@@ -1,9 +1,42 @@
 .templates--customer--_partials--login-form {
+  max-width: 50rem;
+  padding: 3rem;
+  background: #FFFFFF;
+  @extend %shadow, %border;
+  margin:4rem auto 0;
   .address-form {
-      
+    width: 70%;
+    margin:0 auto;
+    .required{
+      span{
+        display: block;
+        margin-top: 2rem;
+        font-weight: bold;
+
+      }
+      input{
+        margin-top: 1rem;
+        width: 100%;
+      }
+      &:first-of-type{
+        span{
+          margin-top:0;
+
+        }
+      }
+    }
+
+
   }
 
   .lost-password {
     margin-top: 2rem;
   }
+  .form-footer{
+    .btn{
+      display: table;
+      margin: 2rem auto 0;
+    }
+  }
+
 }

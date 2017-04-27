@@ -6,7 +6,7 @@
 
         <form action="{block name='customer_form_actionurl'}{$action}{/block}" id="customer-form" method="post">
 
-            <section class="address-form templates--customer--_partials--customer-form">
+            <section class="wrapper-form">
                 {block "form_fields"}
                     {foreach from=$formFields item="field"}
                         {block "form_field"}

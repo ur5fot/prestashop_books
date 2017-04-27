@@ -2,31 +2,78 @@
   @extend %card;
   form {
     @extend %cf;
-    .radio-field{
+    .radio-field {
 
     }
-    > label {
+    & > * label {
       display: block;
       @extend %cf;
-      line-height: 3rem;
+      //line-height: 3rem;
       margin-top: 1rem;
       vertical-align: middle;
-
-      > * {
-        float: left;
-        display: table;
-        //margin-right: 2rem;
-        vertical-align: middle;
-      }
       span {
+        //font-weight: bold;
         width: 25%;
+        float: left;
+        display: block;
       }
-      input {
+      > input {
+        display: block;
+        float: left;
         width: 75%;
-        //height: 3rem;
-        //line-height: 3rem;
       }
+      label {
+        float: left;
+        width: 75%;
+
+      }
+
+    }
+    .required {
+
     }
 
+    .radio-field {
+      label {
+        float: left;
+        //height: 2rem;
+        width: auto;
+        display: table;
+        margin-top: 0;
+        margin-left: 2rem;
+        line-height: 3.6rem;
+        vertical-align: middle;
+        input {
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 3rem;
+          width: auto;
+        }
+        &:first-of-type {
+          margin-left: 0;
+        }
+      }
+    }
+    .checkbox-field {
+      input {
+        display: block;
+        float: left;
+        line-height: 3rem;
+        width: 2rem;
+      }
+      span {
+        display: block;
+        width: calc(100% - 3rem);
+        line-height: 3rem;
+        float: left;
+        padding-left: 1rem;
+      }
+    }
+    .form-footer {
+      .btn {
+        margin: 1rem auto 0;
+        display: table;
+      }
+    }
   }
 }

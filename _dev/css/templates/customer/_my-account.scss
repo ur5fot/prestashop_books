@@ -1,8 +1,16 @@
 .page-my-account {
-  .page-content{
+  // переикинул в глобальную облость в common
+  /*.my-account-tabs{
+    @extend .tabs;
+    nav{
+      .icon{
+        margin-right: 1rem;
+      }
 
-  }
-  .link-list {
+    }
+  }*/
+
+  /*.link-list {
     @extend %cf;
     margin-top: 3rem;
     li {
@@ -54,5 +62,5 @@
 
       }
     }
-  }
+  }*/
 }

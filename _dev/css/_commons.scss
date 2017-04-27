@@ -33,6 +33,25 @@ body {
   }
 }
 
+.notification{
+  @extend .container;
+  ul{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    font-weight: bold;
+    text-align: center;
+    li{
+      margin-top: 1rem;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.notification-warning{
+  color: $red;
+}
+
 %cf {
   @include cf;
 
@@ -112,15 +131,27 @@ h1 {
 
 }
 
+.my-account-tabs{
+  @extend .tabs;
+  nav{
+    .icon{
+      margin-right: 1rem;
+    }
+
+  }
+}
+
 .btn {
   border: none;
   background-image: none;
   background-color: transparent;
   box-shadow: none;
   text-transform: uppercase;
+
 }
 
 .btn-yes {
+  @extend .btn;
   //height: 3rem;
   //line-height: 3rem;
   font-weight: bold;

@@ -4,7 +4,7 @@
     //vertical-align: middle;
     margin-top: 3rem;
   & > *  {
-      float: right;
+      float: left;
       display: table;
     }
   }
@@ -14,6 +14,7 @@
     height: 3.9rem;
     padding: 0 1rem;
     font-size: 1.6rem;
+    width: 60%;
 
   }
 }
